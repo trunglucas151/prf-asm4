@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="header-head">
+        <div class="header__head grid wide">
+            <h1 class="header__heading"><a href="#" class="header__link">Hot News</a></h1>
+            <span class="header__search"><i class="header__search-icon fas fa-search"></i></span>
+        </div>
+
+        <div id="modalLoading" class="modalLoading">
+            <div class="modalLoading__contain">
+                <i class="modalLoading__icon fas fa-spinner"></i>
+                <span>loading...</span>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal__content">
+                <h2 class="modal__heading">Search</h2>
+                <span class="modal__close"><i class="modal__icon fas fa-times"></i></span>
+
+                <div class="modal__form">
+                    <div class="modal__form-group">
+                        <label for="modalSearch" class="modal__label">Search</label>
+                        <input id="modalSearch" type="text" placeholder="Search.." name="search" class="modal__form-control">
+                        <span id="modalSearchValidate" class="modal__title"></span>
+                    </div>
+                   
+                    <div class="modal__form-group">
+                        <label for="modalStartDate" class="modal__label">From</label>
+                        <input id="modalStartDate" type="date" name="start-date" class="modal__form-control">
+                        <span id="modalStartDateValidate" class="modal__title"></span>
+                    </div>
+                    <div class="modal__form-group">
+                        <label for="modalEndDate" class="modal__label">To</label>
+                        <input id="modalEndDate" type="date" name="end-date" class="modal__form-control">
+                        <span id="modalEndDateValidate" class="modal__title"></span>
+                    </div>
+                    <div class="modal__btn-group">
+                        <button id="searchBtn" class="btn btn--info">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="grid wide">
+            <div class="row"></div> 
+        </div>
+    </main>
+
+    <footer id="footer">
+        <span class="footer__title">Copyright Trung Cover 14918</span>
+    </footer>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>

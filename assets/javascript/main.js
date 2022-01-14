@@ -13,11 +13,13 @@ $(document).ready(function() {
      */
     let getTopHead = (callback) => {
         let topHeaderApi = `https://gnews.io/api/v4/top-headlines?lang=en&token=${tokenId}`;
+        $('#modalLoading').show();
         fetch(topHeaderApi)
         .then(function (response) {
             return response.json();
         })
         .then((data) => {
+            $('#modalLoading').hide();
             return data.articles;
         })
         .then(callback);
